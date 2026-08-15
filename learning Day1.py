@@ -218,3 +218,20 @@
 # f = file.readlines()
 
 # print(f)
+
+
+# pizza = {
+#     'name': 'Margherita Pizza',
+#     'price': 8.9,
+#     'calories_per_slice': 250,
+#     'toppings': ['mozzarella', 'basil']
+# }
+# pizza.get('toppings', [])
+# pizza.items()
+# pizza.keys()
+# pizza.values()
+# pizza.pop('price', 10)
+# pizza.clear()
+
+# pizza.update({'name': 'pizzahurt','price':14})
+# print(pizza)
