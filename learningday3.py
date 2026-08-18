@@ -9,7 +9,7 @@ def ai(name):
 
 ai("rahul")
 
-def greet(name = "Guest")
+def greet(name = "Guest"):
 
 # example
 
