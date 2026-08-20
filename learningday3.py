@@ -10,29 +10,30 @@ def ai(name):
 ai("rahul")
 
 def greet(name = "Guest"):
+    print("hello", name)
 
 # example
 
-def order_food(food, drink= "water"):
-    print("Food",food)
-    print("Drink", drink)
+# def order_food(food, drink= "water"):
+#     print("Food",food)
+#     print("Drink", drink)
 
 
 # order_food("pizza")
 
-order_food("pizza", "coke")
+# order_food("pizza", "coke")
 
 
 # requied vs optional parameter
 
 # required parmeter
 
-def add(a, b = 10):
-    return a + b
+# def add(a, b = 10):
+#     return a + b
 
-add(5)
+# add(5)
 
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
-add(5, 10)
+# add(5, 10)

@@ -1,5 +1,5 @@
 import math
-roducts = {
+products = {
     'Laptop': 990,
     'Smartphone': 600,
     'Tablet': 250,
