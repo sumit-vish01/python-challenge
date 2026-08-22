@@ -47,7 +47,7 @@ for index, product in enumerate(products.items()):
 for index, product in enumerate(products.items(),1):
     print(index, product)
 
-sets
+
 
 my_sets = {2, 4,5 }
 set()
