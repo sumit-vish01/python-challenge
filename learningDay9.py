@@ -14,4 +14,8 @@ elif number <=30 and number<40:
     print("ur are looser")
 elif number <= 50 and number<100:
     print("ur are powerful winner")
+# elif guess < number:
+#     print("Too low!")
 
+# else:
+#     print("Too high!")
