@@ -24,7 +24,7 @@
 # print("I will print on the same line.")
 # print("i am ", 35,"yeaers old")
 
-name = "sumit" #global vairables 
+# name = "sumit" #global vairables 
 
 # def greet():
 #     print(name)
