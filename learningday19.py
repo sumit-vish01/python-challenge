@@ -33,12 +33,12 @@
 #           self._balance -= amount
 
 
-class Wallet:
-    def __init__(self):
-        self.__balance = 0
-    def _validate(self, amount):
-        if amount <0:
-            raise ValueError('Amount must be positive')  
-    def deposit(self, amount):
-        self.__validate(amount) 
- ise ValueError('Insufficient funds')   
+# class Wallet:
+#     def __init__(self):
+#         self.__balance = 0
+#     def _validate(self, amount):
+#         if amount <0:
+#             raise ValueError('Amount must be positive')  
+#     def deposit(self, amount):
+# #         self.__validate(amount) 
+# #  ise ValueError('Insufficient funds')   
