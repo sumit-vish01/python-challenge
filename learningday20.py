@@ -157,3 +157,84 @@
 # cart.remove('Ergo Keyboard')
 
 # print(cart.list_items())
+
+# class Car:
+#     def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model 
+
+# my_car = Car('Lamborgini','Gallardo')
+# print(my_car.brand)
+# print(my_car.model)
+
+# # getattr(object, attribute_name, default_value)
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+# person = Person('John Doe', 30)
+
+# print(getattr(person,  'name'))
+# print(getattr(person,  'age'))
+# print(getattr(person,  'city'))
+
+# class Person: 
+#     def __init__(self, name, age): 
+#         self.name = name 
+#         self.age = age 
+
+# person = Person('John Doe', 30)
+
+# attr_name = input('Enter the attribute you want to see: ')
+# print(getattr(person, attr_name, 'Attribute not found'))
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# person = Person('John Doe', 30)
+
+# att_name = input('Enter the attribute you want to see:')
+# print(getattr(person, att_name, 'Attribute not found'))
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# person = Person('John Doe', 30)
+
+# for attr in dir(person):
+#     for attr in dir(person):
+#         if not attr.startswith('__') and not callable(getattr(person, attr)):
+#             value = getattr(person, attr)
+#             print(f'{attr}: {value}')
+
+# class Product:
+#     def __init__(self,name, price):
+#         self.name = name
+#         self.price = price
+
+# Product_a =Product('T-shirt',25)
+# required_attributes = ['name','price','price']
+
+# for attr in required_attributes:
+#     if not hasattr(Product_a, attr):
+#         # print('" Error: Product is missing the required attributes:'{attr}''
+#         print(f"ERROR: PRoduct is missing the requirwed the reuired attributes:{attr}")
+#     else:
+#         print(f'{attr}: {getattr(Product_a,attr)}')
+
+# class usersession:
+#     def __init__(self, user_id, token):
+#         self.user_id = user_id
+#         self.auth_token = token
+#         self.tenp_counter = 0
+
+# session = usersession(101,'a1b2c3d4e5')
+
+# for attr in attributes_to_clean:
+
+        
