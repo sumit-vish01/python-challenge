@@ -403,10 +403,10 @@
 # for i in range(len(numbers)):
 #     print(i, numbers[i])
 
-numbers = [10, 20, 30]
+# numbers = [10, 20, 30]
 
-# for i in range(len(numbers)):
-#     print(i , numbers[i])
+# # for i in range(len(numbers)):
+# #     print(i , numbers[i])
 
-for i, num in enumerate(numbers):
-    print(i , num)
+# for i, num in enumerate(numbers):
+#     print(i , num)
