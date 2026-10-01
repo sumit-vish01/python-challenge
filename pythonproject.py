@@ -31,7 +31,7 @@ responses = {
 
 #Methods/functions to get response of chatBot
 def getresponseofBot(userOuestion):
-    userOuestion = userOuestion.lower()
+    userOuestion = userOuestion()
     for eachkey in responses:
         if eachkey  in userOuestion:
             return responses[eachkey]
