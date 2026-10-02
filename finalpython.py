@@ -47,5 +47,139 @@ print("----Welcome to python basics demo program -----")
 
 #arithimethic operators
 
-sum_result = num1 + num2 
-sum_result = num2 - num1 
+# sum_result = num1 + num2 
+# sum_result = num2 - num1 
+# sum_result = num1 * num2
+# sum_result = num3 / num4
+# sum_result = num1 % num2
+
+# print("\n ----- Arithmetic calculations -----")
+# print(f"{num1} + {num2} = {sum_result}")
+# print(f"{num1} - {num2} = {sum_result}")
+# print(f"{num1} / {num2} = {sum_result}")
+# print(f"{num1} * {num2} = {sum_result}")
+# print(f"{num1} // {num2} = {sum_result}")
+# print(f"Remainder job {num1} ko {num2} se divide karenge: { mod_result}")
+
+
+#assigment opeeratures
+counter = 10
+counter += 5
+print(f"\nAssignment operator example (10 += 5): { }")
+
+#making a contact book using python ----- pythonnn----
+
+contacts = {}
+
+def Add_contact():
+    name = input("Enter name: ").strip()
+    age = input("Enter age: ").strip()
+    Phone = input("Enter Phone number: ").strip()
+    Email = input("Enter email:").strip()
+    address = input("Enter address: ").strip()
+
+
+    contacts[name] = {
+        "Phone": Phone,
+        "age": age,
+        "email" : Email,
+        "address": address
+    }
+
+    if len(Phone) != 10 or not Phone.isdigit():
+        print("Error: Phone number must contain 10 digits")
+        return 
+    
+    if name in contacts:
+        print("Contact is already exists!")
+        return
+    print(f"contact '{name}' added successfully!")
+
+def View_contact():
+    if len(contacts) == 0:
+        print("No contact found!")
+    else:
+        print("\n---- Your contact ----")
+
+        for name, phone in contacts.items():
+            print("Name:", name)
+            print("Phone:", phone)
+            print("age:", age)
+            print("Email:", email)
+            print("address:", address)
+            print("-----------")
+
+
+def search_contact():
+    name = input("Enter name to search: ").strip()
+
+    if name in contacts:
+        print("Name:", name)
+        print("Phone:", contacts[name]["Phone"])
+        print("age:", contacts[name]["age"])
+        print("email:", contacts[name]["email"])
+        print("address:",contacts[name]["address"])
+
+    else:
+        print("contact not found!.")
+
+def Delete_contact():
+    name = input("Enter name to delete: ").strip()
+
+    if name in contacts:
+        del contacts[name, age, email, address]
+        print("Contact deleted successfully!")
+    else:
+        print("Contact not found.")
+
+
+def updated_contact():
+    name = input("Enter update name: ")
+
+    if name in contacts:
+
+        pass
+
+    else:
+        print("Contact not found!")
+
+
+
+while True:
+    print("\n=======CONTACT BOOK =======")
+    print("1.ADD Contact")
+    print("2.View Contacts")
+    print("3.search Contacts")
+    print("4.Delete Contacts")
+    print("5.Update contact")
+    print("6. Exit")
+
+
+    choice = int(input("Enter choice (1-5): "))
+
+    if choice == 1:
+        Add_contact()
+
+    elif choice == 2:
+        View_contact()
+    
+    elif choice == 3:
+        search_contact()
+
+    elif choice == 4:
+        Delete_contact()
+
+    elif choice == 5:
+        updated_contact()
+
+    elif choice == 6:
+        print("Thank you for using contact book!")
+        break
+    
+else:
+    print("Good byee come later!.")
+
+
+
+
+
