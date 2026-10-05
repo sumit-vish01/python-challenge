@@ -181,5 +181,51 @@ else:
 
 
 
+class coffee:
+
+    def __init__(self, name, price):
+        self.name = name
+        
+        self.price = price
+
+    
+    def __init__(self):
+
+        self.items = []
+        
+    
+    def  add_item(self, coffee):
+
+        self.items.append(coffee)
+
+        print(f"Added {coffee.name} to your order.")
+        
+    #calculating total price
+
+    def total(self):
+
+      return sum(item.price for item in  self.items)
+
+#show order summary
+    
+    def show_order(self):
+
+        if not self.items:
+
+             print("No items in order.")
+
+             return
+
+        print("\nYour order: ")
+
+        for i ,item in enumerate(self.items, 1):
+
+            print(f"{i}. {items.name} - ${item.price}")
+
+        print(f"{i}.{item.name} - ${item.price}")
+
+        
+
+
 
 
