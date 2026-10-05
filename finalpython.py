@@ -228,4 +228,38 @@ class coffee:
 
 
 
+# class Student:
+#     collage_name = "anbx"
+# mylist = [10,20 , 30]
+# print(mylist,type(mylist))
+# mylist = [10, 20 , 30]
+# print(mylist[len(mylist)] -1)
+
+# mylist = [10, 20, 30, "asd", 7.0, 8+8j,[1,3,4]]
+# print(mylist)
+# mylist = [10, 40, 30]
+# last = mylist.pop()
+# print(last)
+# print(mylist)
+
+# mylist = []
+
+
+# n = int(input())
+# for i in range(n):
+#     currEle = int(input())
+#     mylist.append(currEle)
+
+# print(mylist)
+# mylist = input().split(" ")
+# for i in range(len(mylist)):
+#     mylist[i] = int(mylist[i])
+
+# print(mylist, type(mylist))
+
+# mylist = input().split(" ")
+# for i in range(len(mylist)):
+#     mylist[i] = int(mylist[i])
+
+# print(mylist.type(mylist))
 
