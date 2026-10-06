@@ -222,9 +222,27 @@ class coffee:
 
             print(f"{i}. {items.name} - ${item.price}")
 
-        print(f"{i}.{item.name} - ${item.price}")
+        print(f"Total: ${self.name} - ${item.price}")
 
-        
+    #handle checckout process
+
+    def checkout(self):
+
+        if not self.item:
+            print("Your cart is empty.")
+
+            return
+        self.show_order()
+
+        confirm = input("Processed to checkout? (yes/no): ").strip().lower()
+
+        if comfirm == 'yes':
+
+            print("Order comfirmed! Thank you.")
+
+        else:
+
+            
 
 
 
