@@ -345,3 +345,43 @@ class coffee:
 
             
 
+import pygame
+import sys
+
+# 1. Initialize Pygame
+pygame.init()
+
+# 2. Set up the display window (Width, Height in pixels)
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption("My First Python Game")
+
+# Setup clock to control frame rate (FPS)
+clock = pygame.time.Clock()
+
+# 3. Main Game Loop
+running = True
+while running:
+    # --- Event Handling (Listen for user inputs) ---
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:  # If user clicks the 'X' button
+            running = False
+
+    # --- Game Logic ---
+    # (This is where you will add movement, score updates, and collision logic)
+
+    # --- Drawing Stage ---
+    screen.fill((50, 150, 255))  # Fills screen with a light blue color RGB
+
+    # (This is where you draw shapes, characters, or text)
+
+    # Update the full display surface to the screen
+    pygame.display.flip()
+
+    # Maintain 60 frames per second
+    clock.tick(60)
+
+# Clean up and close the application safely
+pygame.quit()
+sys.exit()
