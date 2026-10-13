@@ -111,3 +111,13 @@ def myfun():
 myfun()
 
 print("Python is " + x)
+
+def cargame():
+    n = int(input("enter the game name: "))
+    print("how the world create this game")
+
+
+x = int(1)
+x = float(a)
+x = str(b)
+print(a and b)
