@@ -75,3 +75,49 @@
 
 #game 2 making monster battle game
 
+# expected_marks = 80
+# actual_marks = 65
+
+# difference = abs(expected_marks - actual_marks)
+
+# print("DIfference:", difference)
+
+# print(min(18, 5, 20, 3, 8))
+
+# numbers = [12, 5, 30, 2, 18]
+
+# smallest = min(numbers)
+
+# print(smallest)
+
+# names = ["Ravi", "Aman", "Karan"]
+
+# print(min(names))
+
+# print(max(10, 5, 20, 3, 8))
+
+# a = float(input("Enter first area: "))
+# b = float(input("Enter second side: "))
+# c = float(input("Enter third side: "))
+
+# s = (a + b + c) / 2
+
+# area = (s * ( s-a) * (s - b) * (s -c)) ** 0.5
+
+# print("area of triangle with given side is", round(area, 2))
+
+# principle = float(input("Enter principle amount: "))
+# rate = float(input("Enter interest rate: "))
+# time = float(input("Enter time: ")) 
+# s1 = (principle * rate * time) / 100
+
+# print("simple interest is", s1)
+
+principle = float(input("Enter principle amount: "))
+rate = float(input("Enter interest rate: "))
+time = float(input("Enter time: ")) 
+amount1 = principle * (1 + rate/100) ** time
+amount2 = principle * pow((1 + rate/ 100), time)
+print(round(amount2, 2))
+c1 = amount2  - principle
+print("compound interest", round(c1))
